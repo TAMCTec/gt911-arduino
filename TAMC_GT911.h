@@ -8,10 +8,10 @@
 #define GT911_ADDR1 (uint8_t)0x5D
 #define GT911_ADDR2 (uint8_t)0x14
 
-#define ROTATION_NORMAL    (uint8_t)0
-#define ROTATION_LEFT      (uint8_t)1
-#define ROTATION_INVERTED  (uint8_t)2
-#define ROTATION_RIGHT     (uint8_t)3
+#define ROTATION_LEFT      (uint8_t)0
+#define ROTATION_INVERTED  (uint8_t)1
+#define ROTATION_RIGHT     (uint8_t)2
+#define ROTATION_NORMAL    (uint8_t)3
 
 
 // Real-time command (Write only)
