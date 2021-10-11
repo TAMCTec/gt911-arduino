@@ -99,7 +99,7 @@ TP_Point TAMC_GT911::readPoint(uint8_t *data) {
       break;
     case ROTATION_LEFT:
       temp = x;
-      x = height - y;
+      x = width - y;
       y = temp;
       break;
     case ROTATION_INVERTED:
@@ -109,7 +109,7 @@ TP_Point TAMC_GT911::readPoint(uint8_t *data) {
     case ROTATION_RIGHT:
       temp = x;
       x = y;
-      y = width - temp;
+      y = height - temp;
       break;
     default:
       break;
