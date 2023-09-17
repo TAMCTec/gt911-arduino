@@ -1,4 +1,4 @@
-#include "Arduino.h"
+#include <Arduino.h>
 #include <TAMC_GT911.h>
 #include <Wire.h>
 
@@ -70,6 +70,10 @@ void TAMC_GT911::read(void) {
   uint8_t bufferStatus = pointInfo >> 7 & 1;
   uint8_t proximityValid = pointInfo >> 5 & 1;
   uint8_t haveKey = pointInfo >> 4 & 1;
+
+  if (!bufferStatus)
+    return;
+
   isLargeDetect = pointInfo >> 6 & 1;
   touches = pointInfo & 0xF;
   // Serial.print("bufferStatus: ");Serial.println(bufferStatus);

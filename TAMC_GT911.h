@@ -2,7 +2,7 @@
 #ifndef TAMC_GT911_H
 #define TAMC_GT911_H
 
-#include "Arduino.h"
+#include <Arduino.h>
 #include <Wire.h>
 
 #define GT911_ADDR1 (uint8_t)0x5D
@@ -12,7 +12,6 @@
 #define ROTATION_INVERTED  (uint8_t)1
 #define ROTATION_RIGHT     (uint8_t)2
 #define ROTATION_NORMAL    (uint8_t)3
-
 
 // Real-time command (Write only)
 #define GT911_COMMAND       (uint16_t)0x8040
